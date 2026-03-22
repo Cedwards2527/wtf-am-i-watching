@@ -1,0 +1,30 @@
+.header {
+  font-family: "Cabinet Grotesk", "Inter", "Helvetica Neue", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  width: 300px;
+  height: auto;
+}
+
+.header__controls {
+  display: flex;
+  margin-top: 30px;
+  gap: 150px;
+  align-items: center;
+}
+
+.header__movie-of-the-day-btn,
+.header__random-movie-btn,
+.header__about {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 23px;
+  cursor: pointer;
+}
