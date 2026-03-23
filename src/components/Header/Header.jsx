@@ -1,20 +1,22 @@
 import wtfLogo from "../../assets/wtf-logo.jpg";
 import "./Header.css";
+import NavButton from "../NavButton/NavButton";
 
 function Header() {
   return (
     <header className="header">
-      <img className="header__logo" src={wtfLogo} alt="wtf-logo" />
+      <NavButton to="/">
+        <img
+          className="header__logo"
+          src={wtfLogo}
+          alt="WTF Am I Watching logo"
+        />
+      </NavButton>
+
       <div className="header__controls">
-        <button className="header__movie-of-the-day-btn" type="button">
-          Movie Of The Day
-        </button>
-        <button className="header__random-movie-btn" type="button">
-          WTF Should I Watch Now?
-        </button>
-        <button className="header__about" type="button">
-          About WTF Am I Watching
-        </button>
+        <NavButton to="/movie-of-the-day">Movie Of The Day</NavButton>
+        <NavButton to="/random">WTF Should I Watch Now?</NavButton>
+        <NavButton to="/about">About WTF Am I Watching</NavButton>
       </div>
     </header>
   );

@@ -13,18 +13,6 @@
 .header__controls {
   display: flex;
   margin-top: 30px;
-  gap: 150px;
+  gap: 160px;
   align-items: center;
-}
-
-.header__movie-of-the-day-btn,
-.header__random-movie-btn,
-.header__about {
-  border: none;
-  background-color: transparent;
-  color: #fff;
-  font-style: oblique;
-  font-weight: bolder;
-  font-size: 23px;
-  cursor: pointer;
 }
