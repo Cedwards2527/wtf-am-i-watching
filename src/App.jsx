@@ -13,7 +13,7 @@ function App() {
       <div className="page__content">
         <Header />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/movie-of-the-day" element={<MovieOfTheDay />} />
           <Route path="/random" element={<RandomMovie />} />
           <Route path="/about" element={<About />} />
