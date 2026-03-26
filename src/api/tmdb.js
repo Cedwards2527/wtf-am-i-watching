@@ -10,3 +10,7 @@ export const getMovie = (id) => {
     handleServerResponse
   );
 };
+
+export const getMoviesFromPicks = (ids) => {
+  return Promise.all(ids.map((id) => getMovie(id)));
+};
