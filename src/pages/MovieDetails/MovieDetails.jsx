@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getMovie } from "../../api/tmdb";
-import { getPosterUrl } from "../../utils/image";
-import "./MovieDetails.css";
+import MovieFull from "../../components/MoiveFull/MovieFull";
 
 function MovieDetails() {
   const { id } = useParams();
@@ -24,18 +23,7 @@ function MovieDetails() {
 
   if (!movie) return <p>Loading...</p>;
 
-  return (
-    <div className="movie-details-container">
-      <img
-        className="movie-poster"
-        src={getPosterUrl(movie.poster_path)}
-        alt={movie.title}
-      />
-      <h2 className="movie-title">{movie.title}</h2>
-
-      <p className="movie-overview">{movie.overview}</p>
-    </div>
-  );
+  return <MovieFull movie={movie} />;
 }
 
 export default MovieDetails;
