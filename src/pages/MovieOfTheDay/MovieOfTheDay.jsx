@@ -1,5 +1,5 @@
-function MovieOfTheDay() {
-  return <h1>Movie of the Day</h1>;
+function MovieofTheDay() {
+  <h2>Movie</h2>;
 }
 
-export default MovieOfTheDay;
+export default MovieofTheDay;

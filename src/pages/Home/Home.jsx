@@ -1,17 +1,8 @@
 import { useEffect, useState } from "react";
 import { wtfPicks } from "../../data/movies";
 import { getMoviesFromPicks } from "../../api/tmdb";
-import { getPosterUrl } from "../../utils/image";
+import MovieRow from "../../components/MovieRow/MovieRow";
 import "./Home.css";
-
-function MovieCard({ movie }) {
-  return (
-    <div className="movie-card">
-      <img src={getPosterUrl(movie.poster_path)} alt={movie.title} />
-      <h2 className="movie-title">{movie.title}</h2>
-    </div>
-  );
-}
 
 function Home() {
   const [movies, setMovies] = useState([]);
@@ -35,12 +26,10 @@ function Home() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className="wtf-picks">
+    <div className="wtf__picks">
       <h1>WTF Picks</h1>
-      <div className="movies-grid">
-        {movies.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
+      <div className="movies__grid">
+        <MovieRow movies={movies} />
       </div>
     </div>
   );

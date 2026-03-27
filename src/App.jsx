@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import MovieOfTheDay from "./pages/MovieOfTheDay/MovieOfTheDay";
 import RandomMovie from "./pages/RandomMovie/RandomMovie";
 import About from "./pages/About/About";
+import MovieDetails from "./pages/MovieDetails/MovieDetails";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/movie-of-the-day" element={<MovieOfTheDay />} />
           <Route path="/random" element={<RandomMovie />} />
           <Route path="/about" element={<About />} />
+          <Route path="/movie/:id" element={<MovieDetails />} />
         </Routes>
       </div>
     </div>
