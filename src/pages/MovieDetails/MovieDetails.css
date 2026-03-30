@@ -1,4 +1,4 @@
-.movie-details-container {
+.moviedetails-container {
   max-width: 400px;
   margin: 100px auto 50px;
   text-align: center;
@@ -21,9 +21,5 @@
 }
 
 .movie-title {
-  color: #fff;
-}
-
-.movie-rating {
   color: #fff;
 }

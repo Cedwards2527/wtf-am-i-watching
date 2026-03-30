@@ -27,7 +27,7 @@ function Home() {
 
   return (
     <div className="wtf__picks">
-      <h1>WTF Picks</h1>
+      <h2 className="wtfPicks__header">WTF Picks</h2>
       <div className="movies__grid">
         <MovieRow movies={movies} />
       </div>

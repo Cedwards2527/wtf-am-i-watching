@@ -1,13 +1,16 @@
 import { NavLink } from "react-router-dom";
 import "./NavButton.css";
 
-function NavButton({ to, children }) {
+function NavButton({ to, children, className = "" }) {
   return (
     <NavLink
       to={to}
-      className={({ isActive }) =>
-        isActive ? "nav-button nav-button--active" : "nav-button"
-      }
+      className={({ isActive }) => {
+        const activeClass = isActive
+          ? "nav-button nav-button--active"
+          : "nav-button";
+        return `${activeClass} ${className}`.trim();
+      }}
     >
       {children}
     </NavLink>

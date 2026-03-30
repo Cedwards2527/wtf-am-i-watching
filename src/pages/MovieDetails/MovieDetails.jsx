@@ -21,7 +21,8 @@ function MovieDetails() {
       });
   }, [id]);
 
-  if (!movie) return <p>Loading...</p>;
+  if (loading) return <p>Loading moive...</p>;
+  if (error) return <p>{error}</p>;
 
   return <MovieFull movie={movie} />;
 }

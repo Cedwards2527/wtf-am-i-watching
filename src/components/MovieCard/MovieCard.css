@@ -3,8 +3,10 @@
   color: #fff;
   border-radius: 8px;
   overflow: hidden;
+  margin: auto;
   transition: transform 0.2s;
   cursor: pointer;
+  text-align: center;
 }
 
 .movie__card_img {

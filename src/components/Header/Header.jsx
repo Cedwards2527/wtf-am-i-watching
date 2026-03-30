@@ -14,9 +14,15 @@ function Header() {
       </NavButton>
 
       <div className="header__controls">
-        <NavButton to="/movie-of-the-day">Movie Of The Day</NavButton>
-        <NavButton to="/random">WTF Should I Watch Now?</NavButton>
-        <NavButton to="/about">About WTF Am I Watching</NavButton>
+        <NavButton className="header__button" to="/movie-of-the-day">
+          Movie Of The Day
+        </NavButton>
+        <NavButton className="header__button" to="/random">
+          WTF Should I Watch Now?
+        </NavButton>
+        <NavButton className="header__button" to="/about">
+          About WTF Am I Watching
+        </NavButton>
       </div>
     </header>
   );
