@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getMovie } from "../../api/tmdb";
 import { wtfPicks } from "../../data/movies";
-import MovieFull from "../../components/MoiveFull/MovieFull";
+import MovieFull from "../../components/MovieFull/MovieFull";
 import "./MovieOfTheDay.css";
 
 function MovieOfTheDay() {

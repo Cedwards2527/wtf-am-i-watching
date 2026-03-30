@@ -4,7 +4,7 @@ import "./MovieCard.css";
 
 function MovieCard({ movie }) {
   return (
-    <div className="movie__card">
+    <li className="movie__card">
       <NavLink className="movie__link" to={`/movie/${movie.id}`}>
         <img
           className="movie__card_img"
@@ -13,7 +13,7 @@ function MovieCard({ movie }) {
         />
         <h2 className="movie__title">{movie.title}</h2>
       </NavLink>
-    </div>
+    </li>
   );
 }
 

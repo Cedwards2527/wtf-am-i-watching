@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getMovie } from "../../api/tmdb";
-import MovieFull from "../../components/MoiveFull/MovieFull";
+import MovieFull from "../../components/MovieFull/MovieFull";
 
 function MovieDetails() {
   const { id } = useParams();
@@ -21,7 +21,7 @@ function MovieDetails() {
       });
   }, [id]);
 
-  if (loading) return <p>Loading moive...</p>;
+  if (loading) return <p>Loading movie...</p>;
   if (error) return <p>{error}</p>;
 
   return <MovieFull movie={movie} />;
