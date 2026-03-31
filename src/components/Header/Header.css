@@ -22,6 +22,20 @@
   color: #fff;
 }
 
-.header__button:hover {
+.header__button_day:hover {
   transform: scale(1.05);
+  color: rebeccapurple;
+  transition: 1s;
+}
+
+.header__button_random:hover {
+  transform: scale(1.05);
+  color: rgb(104, 165, 240);
+  transition: 1s;
+}
+
+.header__button_about:hover {
+  transform: scale(1.05);
+  color: rgb(80, 114, 29);
+  transition: 1s;
 }

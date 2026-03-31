@@ -18,6 +18,7 @@ function MovieDetails() {
       .catch((err) => {
         console.error("Error fetching movies", err);
         setError("Failed to load movies");
+        setLoading(false);
       });
   }, [id]);
 

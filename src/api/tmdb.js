@@ -12,5 +12,12 @@ export const getMovie = (id) => {
 };
 
 export const getMoviesFromPicks = (ids) => {
-  return Promise.all(ids.map((id) => getMovie(id)));
+  return Promise.all(
+    ids.map((id) =>
+      getMovie(id).catch((error) => {
+        console.warn(`Skipping invalid TMDB id ${id}:`, error);
+        return null;
+      })
+    )
+  ).then((movies) => movies.filter(Boolean));
 };
