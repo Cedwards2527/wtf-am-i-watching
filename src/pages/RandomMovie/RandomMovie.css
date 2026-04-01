@@ -3,6 +3,12 @@
   flex-direction: column;
   align-items: center;
 }
+
+.random__movie_title {
+  font-family: "Zilla Slab";
+  font-size: 45px;
+}
+
 .random__movie_button {
   background-color: rebeccapurple;
   color: rgb(104, 165, 240);
@@ -21,12 +27,24 @@
   transition: 1s;
 }
 
-.random__movie_title {
-  font-family: "Zilla Slab";
-  font-size: 45px;
+.movie__wrapper {
+  transition: all 0.25s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+  filter: blur(4px);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
 }
 
 @media (max-width: 768px) {
   .header {
     padding: 20px;
   }
+}

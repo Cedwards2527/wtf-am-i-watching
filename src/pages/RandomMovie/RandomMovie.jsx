@@ -7,6 +7,7 @@ import "./RandomMovie.css";
 function RandomMovie() {
   const [movie, setMovie] = useState(null);
   const [setError] = useState(null);
+  const [fade, setFade] = useState(false);
 
   const randomIndex = () => {
     const index = Math.floor(Math.random() * wtfPicks.length);
@@ -26,7 +27,12 @@ function RandomMovie() {
       });
   };
   const handleClick = () => {
-    fetchRandomMovie();
+    setFade(true);
+
+    setTimeout(() => {
+      fetchRandomMovie();
+      setFade(false);
+    }, 250);
   };
 
   return (
@@ -34,7 +40,9 @@ function RandomMovie() {
       <button className="random__movie_button" onClick={handleClick}>
         <h2 className="random__movie_title">WTF Should I Watch Now!?</h2>
       </button>
-      {movie && <MovieFull movie={movie} />}
+      <div className={`movie__wrapper ${fade ? "fade-out" : "fade-in"}`}>
+        {movie && <MovieFull movie={movie} />}
+      </div>
     </div>
   );
 }
