@@ -24,3 +24,8 @@
 .movie-title {
   color: #fff;
 }
+
+.loading__text {
+  color: #fff;
+  font-size: 25px;
+}

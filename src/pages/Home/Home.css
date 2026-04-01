@@ -4,3 +4,8 @@
   font-size: 50px;
   color: rgb(104, 165, 240);
 }
+
+.loading__text {
+  color: #fff;
+  font-size: 25px;
+}

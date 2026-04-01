@@ -22,7 +22,7 @@ function Home() {
       });
   }, []);
 
-  if (loading) return <p>Loading movies...</p>;
+  if (loading) return <p className="loading__text">Loading movies...</p>;
   if (error) return <p>{error}</p>;
 
   return (

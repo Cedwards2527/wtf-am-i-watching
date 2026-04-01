@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tiktok__icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+
+.tiktok__icon:hover {
+  transform: scale(1.2);
+}

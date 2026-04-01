@@ -22,7 +22,7 @@ function MovieDetails() {
       });
   }, [id]);
 
-  if (loading) return <p>Loading movie...</p>;
+  if (loading) return <p className="loading__text">Loading movie...</p>;
   if (error) return <p>{error}</p>;
 
   return <MovieFull movie={movie} />;
