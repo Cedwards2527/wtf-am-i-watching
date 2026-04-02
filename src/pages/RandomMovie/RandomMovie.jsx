@@ -6,7 +6,7 @@ import "./RandomMovie.css";
 
 function RandomMovie() {
   const [movie, setMovie] = useState(null);
-  const [setError] = useState(null);
+  const [error, setError] = useState(null);
   const [fade, setFade] = useState(false);
 
   const randomIndex = () => {
@@ -35,10 +35,12 @@ function RandomMovie() {
     }, 250);
   };
 
+  if (error) return <p>{error}</p>;
+
   return (
     <div className="random__movie">
       <button className="random__movie_button" onClick={handleClick}>
-        <h2 className="random__movie_title">WTF Should I Watch Now!?</h2>
+        <span className="random__movie_title">WTF Should I Watch Now!?</span>
       </button>
       <div className={`movie__wrapper ${fade ? "fade-out" : "fade-in"}`}>
         {movie && <MovieFull movie={movie} />}

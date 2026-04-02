@@ -1,11 +1,11 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import MovieOfTheDay from "./pages/MovieOfTheDay/MovieOfTheDay";
 import RandomMovie from "./pages/RandomMovie/RandomMovie";
 import About from "./pages/About/About";
 import MovieDetails from "./pages/MovieDetails/MovieDetails";
-import Footer from "../src/components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {

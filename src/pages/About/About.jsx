@@ -12,24 +12,16 @@ function About() {
 
       <p>
         WTF Am I Watching helps you discover movies that are unexpected,
-        overlooked, or just plain weird—in the best way possible. Instead of the
-        same popular titles, you get something different.
+        overlooked, so bad it's good, or just plain weird—in the best way
+        possible. Instead of the same popular titles, you get something
+        different.
       </p>
+
+      <h2 className="about__subtitle">WHY?</h2>
 
       <p>
         Because sometimes the best movies are the ones you never would have
         picked yourself.
-      </p>
-
-      <p>
-        The picks are powered by The Movie Database (TMDB) and a curated list of
-        films chosen to surprise you.
-      </p>
-      <h3 className="about__continued">How It Works</h3>
-      <p>
-        Movies are pulled from The Movie Database (TMDB) using their API and
-        selected from a curated list designed to keep things interesting. You
-        can explore a featured movie of the day or get a completely random pick.
       </p>
     </div>
   );
