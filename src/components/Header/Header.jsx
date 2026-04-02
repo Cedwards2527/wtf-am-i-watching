@@ -1,4 +1,4 @@
-import wtfLogo from "../../assets/wtf-logo.jpg";
+import wtfLogo from "../../assets/wtf-logo.webp";
 import "./Header.css";
 import NavButton from "../NavButton/NavButton";
 
