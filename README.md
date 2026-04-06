@@ -43,7 +43,7 @@ Create a watchlist feature
 
 Improve UI and add animations
 
-## Purpose
+## Purpose of WTF am I watching
 
 The goal of this project is to provide a simple and fast way to discover movies without overcomplicating the experience. It focuses on usability, speed, and keeping the decision-making process easy.
 
