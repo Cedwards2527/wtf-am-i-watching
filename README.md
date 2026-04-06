@@ -33,6 +33,12 @@ This project uses the TMDB API for movie data.
 A valid API key is required for the app to function properly.
 Content depends on the data returned by the API.
 
+## Environment Setup
+
+1. Copy `.env.example` to `.env`.
+2. Add your TMDB key as `VITE_TMDB_API_KEY`.
+3. Never commit `.env`.
+
 ## Future Improvements
 
 Add search functionality
