@@ -49,3 +49,8 @@ The goal of this project is to provide a simple and fast way to discover movies 
 
 Check out this video(https://drive.google.com/file/d/1f2R7skvUpSS3a6X8OkkBXpWjnubBekQ8/view?usp=drive_link), where I describe my
 project and some challenges I faced while building it.
+
+## Live Project
+
+The deployed project can be viewed here:
+https://cedwards2527.github.io/wtf-am-i-watching/

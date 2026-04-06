@@ -2,6 +2,7 @@
   "name": "wtf-am-i-watching",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://cedwards2527.github.io/wtf-am-i-watching/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +10,9 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
@@ -26,6 +29,7 @@
     "eslint-config-prettier": "^8.10.2",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
+    "gh-pages": "^6.3.0",
     "globals": "^17.4.0",
     "prettier": "^2.8.8",
     "vite": "^8.0.1"
