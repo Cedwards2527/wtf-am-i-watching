@@ -1,4 +1,5 @@
 import "./Footer.css";
+import tiktokIcon from "../../assets/tiktok.svg";
 
 function Footer() {
   return (
@@ -13,11 +14,7 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"
-            alt="TikTok"
-            className="tiktok__icon"
-          />
+          <img src={tiktokIcon} alt="TikTok" className="tiktok__icon" />
         </a>
         <p>{new Date().getFullYear()}</p>
       </div>
