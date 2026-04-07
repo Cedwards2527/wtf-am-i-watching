@@ -1,0 +1,31 @@
+.moviedetails-container {
+  font-family: "ZillaSlab", Georgia, "Times New Roman", serif;
+  max-width: 400px;
+  margin: 100px auto 50px;
+  text-align: center;
+  background-color: rebeccapurple;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.movie-poster {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.movie-overview {
+  color: white;
+  font-weight: bolder;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.movie-title {
+  color: #fff;
+}
+
+.loading__text {
+  color: #fff;
+  font-size: 25px;
+}

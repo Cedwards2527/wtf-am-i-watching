@@ -1,0 +1,29 @@
+.nav-button {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  font-style: oblique;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-button:focus-visible {
+  outline: 2px solid #a22f2f;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav-button {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-button {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,22 +1,15 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { getMovie } from "../../api/tmdb";
-import { wtfPicks } from "../../data/movies";
 import MovieFull from "../../components/MovieFull/MovieFull";
-import "./MovieOfTheDay.css";
 
-function MovieOfTheDay() {
+function MovieDetails() {
+  const { id } = useParams();
   const [movie, setMovie] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const getMovieOfTheDayId = () => {
-    const today = new Date().getDate();
-    const index = today % wtfPicks.length;
-    return wtfPicks[index];
-  };
   useEffect(() => {
-    const id = getMovieOfTheDayId();
-
     getMovie(id)
       .then((data) => {
         setMovie(data);
@@ -27,17 +20,12 @@ function MovieOfTheDay() {
         setError("Failed to load movies");
         setLoading(false);
       });
-  }, []);
+  }, [id]);
 
-  if (loading) return <p>Loading movie...</p>;
+  if (loading) return <p className="loading__text">Loading movie...</p>;
   if (error) return <p>{error}</p>;
 
-  return (
-    <div className="movie-of-the-day">
-      <h2 className="movie-of-the-day__header">Movie Of The DAY</h2>
-      <MovieFull movie={movie} />
-    </div>
-  );
+  return <MovieFull movie={movie} />;
 }
 
-export default MovieOfTheDay;
+export default MovieDetails;

@@ -1,2 +1,29 @@
-import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home";
+import MovieOfTheDay from "./pages/MovieOfTheDay/MovieOfTheDay";
+import RandomMovie from "./pages/RandomMovie/RandomMovie";
+import About from "./pages/About/About";
+import MovieDetails from "./pages/MovieDetails/MovieDetails";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
+
+function App() {
+  return (
+    <div className="page">
+      <div className="page__content">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/movie-of-the-day" element={<MovieOfTheDay />} />
+          <Route path="/random" element={<RandomMovie />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/movie/:id" element={<MovieDetails />} />
+        </Routes>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;

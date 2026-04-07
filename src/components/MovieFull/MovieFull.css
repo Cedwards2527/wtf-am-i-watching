@@ -1,0 +1,25 @@
+.movie__full_container {
+  max-width: 400px;
+  margin: 100px auto 50px;
+  text-align: center;
+  background-color: rgb(102, 51, 153);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.movie__poster {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.movie__overview {
+  color: white;
+  font-weight: bolder;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.movie__title {
+  color: #fff;
+}

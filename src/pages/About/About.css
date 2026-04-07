@@ -1,0 +1,26 @@
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: white;
+  line-height: 1.6;
+}
+
+.about__title {
+  color: rgb(80, 114, 29);
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.about__subtitle {
+  color: rgb(80, 114, 29);
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.about p {
+  font-size: 25px;
+  margin-bottom: 15px;
+}

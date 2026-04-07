@@ -1,0 +1,28 @@
+.movie__card {
+  background-color: rebeccapurple;
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: auto;
+  transition: transform 0.2s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.movie__card_img {
+  width: 100%;
+  display: block;
+}
+
+.movie__card:hover {
+  transform: scale(1.05);
+}
+
+.movie__link {
+  text-decoration: none;
+}
+
+.movie__title {
+  font-size: 1rem;
+  color: #fff;
+}
