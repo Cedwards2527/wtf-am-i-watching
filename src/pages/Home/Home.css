@@ -9,3 +9,15 @@
   color: #fff;
   font-size: 25px;
 }
+
+@media (max-width: 768px) {
+  .wtf-picks__title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wtf-picks__title {
+    font-size: 30px;
+  }
+}

@@ -34,7 +34,7 @@ function MovieOfTheDay() {
 
   return (
     <div className="movie-of-the-day">
-      <h2 className="movie-of-the-day__header">Movie Of The DAY</h2>
+      <h2 className="movie-of-the-day__header">Movie Of The Day</h2>
       <MovieFull movie={movie} />
     </div>
   );

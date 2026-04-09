@@ -11,7 +11,6 @@
 
 .random__movie_button {
   background-color: rebeccapurple;
-
   color: rgb(104, 165, 240);
   border: none;
   cursor: pointer;
@@ -49,8 +48,14 @@
   filter: blur(0);
 }
 
-@media (max-width: 768px) {
-  .header {
-    padding: 20px;
+@media (max-width: 480px) {
+  .random__movie_title {
+    font-size: 40px;
+  }
+
+  .random__movie_button:hover {
+    background-color: rgb(104, 165, 240);
+    color: rebeccapurple;
+    transition: 1s;
   }
 }

@@ -4,3 +4,15 @@
   font-size: 50px;
   color: rebeccapurple;
 }
+
+@media (max-width: 768px) {
+  .movie-of-the-day__header {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-of-the-day__header {
+    font-size: 30px;
+  }
+}
