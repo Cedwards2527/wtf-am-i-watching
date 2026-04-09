@@ -1,5 +1,4 @@
-const BASE_URL = "https://api.themoviedb.org/3";
-const API_KEY = "c2507f36172e2c5a84139cb448112be5";
+import { BASE_URL, API_KEY } from "../config/tmdb";
 
 const handleServerResponse = (res) => {
   return res.ok ? res.json() : Promise.reject(`Error: ${res.status}`);
