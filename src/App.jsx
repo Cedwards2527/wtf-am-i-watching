@@ -11,7 +11,7 @@ import "./App.css";
 function App() {
   return (
     <div className="page">
-      <div className="page__content">
+      <main className="page__content">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/movie/:id" element={<MovieDetails />} />
         </Routes>
-      </div>
+      </main>
       <Footer />
     </div>
   );

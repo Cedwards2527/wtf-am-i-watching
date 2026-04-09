@@ -2,7 +2,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="about">
+    <section className="about">
       <h2 className="about__title">About WTF Am I Watching</h2>
 
       <p>
@@ -23,7 +23,7 @@ function About() {
         Because sometimes the best movies are the ones you never would have
         picked yourself.
       </p>
-    </div>
+    </section>
   );
 }
 

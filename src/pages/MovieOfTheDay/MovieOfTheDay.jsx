@@ -33,10 +33,10 @@ function MovieOfTheDay() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className="movie-of-the-day">
+    <section className="movie-of-the-day">
       <h2 className="movie-of-the-day__header">Movie Of The Day</h2>
       <MovieFull movie={movie} />
-    </div>
+    </section>
   );
 }
 

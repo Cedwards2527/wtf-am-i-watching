@@ -26,12 +26,12 @@ function Home() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div>
+    <section>
       <h2 className="wtf-picks__title">WTF Picks</h2>
       <div className="movies__grid">
         <MovieRow movies={movies} />
       </div>
-    </div>
+    </section>
   );
 }
 
