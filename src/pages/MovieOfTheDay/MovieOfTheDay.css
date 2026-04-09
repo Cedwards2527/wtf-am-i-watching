@@ -8,11 +8,15 @@
 @media (max-width: 768px) {
   .movie-of-the-day__header {
     font-size: 40px;
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (max-width: 480px) {
   .movie-of-the-day__header {
     font-size: 30px;
+    margin: 0;
+    padding: 0;
   }
 }
