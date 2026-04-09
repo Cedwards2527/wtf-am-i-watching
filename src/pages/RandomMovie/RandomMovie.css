@@ -4,12 +4,12 @@
   align-items: center;
 }
 
-.random__movie_title {
+.random__movie-title {
   font-family: "ZillaSlab", Georgia, "Times New Roman", serif;
   font-size: 45px;
 }
 
-.random__movie_button {
+.random__movie-button {
   background-color: rebeccapurple;
   color: rgb(104, 165, 240);
   border: none;
@@ -21,12 +21,12 @@
   height: 300px;
 }
 
-.random__movie_button:focus-visible {
+.random__movie-button:focus-visible {
   outline: 2px solid #a22f2f;
   outline-offset: 4px;
 }
 
-.random__movie_button:hover {
+.random__movie-button:hover {
   background-color: rgb(104, 165, 240);
   color: rebeccapurple;
   transition: 1s;
@@ -49,11 +49,11 @@
 }
 
 @media (max-width: 480px) {
-  .random__movie_title {
+  .random__movie-title {
     font-size: 40px;
   }
 
-  .random__movie_button:hover {
+  .random__movie-button:hover {
     background-color: rgb(104, 165, 240);
     color: rebeccapurple;
     transition: 1s;

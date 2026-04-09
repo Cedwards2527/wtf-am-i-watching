@@ -39,8 +39,8 @@ function RandomMovie() {
 
   return (
     <div className="random__movie">
-      <button className="random__movie_button" onClick={handleClick}>
-        <span className="random__movie_title">WTF Should I Watch Now!?</span>
+      <button className="random__movie-button" onClick={handleClick}>
+        <span className="random__movie-title">WTF Should I Watch Now!?</span>
       </button>
       <div className={`movie__wrapper ${fade ? "fade-out" : "fade-in"}`}>
         {movie && <MovieFull movie={movie} />}

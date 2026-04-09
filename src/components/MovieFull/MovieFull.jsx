@@ -3,14 +3,14 @@ import "./MovieFull.css";
 
 function MovieFull({ movie }) {
   return (
-    <div className="movie__full_container">
+    <div className="movie-full">
       <img
-        className="movie__poster"
+        className="movie-full__poster"
         src={getPosterUrl(movie.poster_path)}
         alt={movie.title}
       />
-      <h2 className="movie__title">{movie.title}</h2>
-      <p className="movie__overview">{movie.overview}</p>
+      <h2 className="movie-full__title">{movie.title}</h2>
+      <p className="movie-full__overview">{movie.overview}</p>
     </div>
   );
 }

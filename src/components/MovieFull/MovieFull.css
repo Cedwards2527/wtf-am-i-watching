@@ -1,4 +1,4 @@
-.movie__full_container {
+.movie-full {
   max-width: 400px;
   margin: 100px auto 50px;
   text-align: center;
@@ -7,19 +7,19 @@
   border-radius: 8px;
 }
 
-.movie__poster {
+.movie-full__poster {
   width: 100%;
   margin-bottom: 20px;
   border-radius: 8px;
 }
 
-.movie__overview {
+.movie-full__overview {
   color: white;
   font-weight: bolder;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.movie__title {
+.movie-full__title {
   color: #fff;
 }
