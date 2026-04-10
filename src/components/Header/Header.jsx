@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import wtfLogo from "../../assets/wtf-logo.webp";
 import "./Header.css";
 import NavButton from "../NavButton/NavButton";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  useEffect(() => {
+    const handleResize = () => setMenuOpen(false);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <header className="header">
       <NavButton to="/">
