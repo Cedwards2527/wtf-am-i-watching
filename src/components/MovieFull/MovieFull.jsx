@@ -1,9 +1,22 @@
 import { getPosterUrl } from "../../utils/image";
+import play_button_icon from "../../assets/play-button.png";
 import "./MovieFull.css";
 
 function MovieFull({ movie }) {
   return (
     <div className="movie-full">
+      <button
+        className="play-button"
+        aria-label="Play trailer"
+        title="Play trailer"
+      >
+        <img
+          className="play-button__icon"
+          src={play_button_icon}
+          alt="Play Trailer"
+        />
+        <span className="play-button__text">Trailer</span>
+      </button>
       <img
         className="movie-full__poster"
         src={getPosterUrl(movie.poster_path)}
