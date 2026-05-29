@@ -1,8 +1,12 @@
+import { useEffect, useState } from "react";
 import { getPosterUrl } from "../../utils/image";
 import play_button_icon from "../../assets/play-button.png";
 import "./MovieFull.css";
 
 function MovieFull({ movie }) {
+  const [activeModal, setActiveModal] = useState(false);
+  const openTrailerModal = () => setActiveModal(true);
+  const closeTrailerModal = () => setActiveModal(false);
   return (
     <div className="movie-full">
       <button
