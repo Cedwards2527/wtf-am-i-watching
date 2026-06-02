@@ -9,10 +9,16 @@ function MovieFull({ movie }) {
   const closeTrailerModal = () => setActiveModal(false);
   return (
     <div className="movie-full">
+      <div
+        className={`modal ${activeModal ? "modal__opened" : ""}`}
+        onClick={closeTrailerModal}
+      ></div>
       <button
         className="play-button"
         aria-label="Play trailer"
         title="Play trailer"
+        type="button"
+        onClick={openTrailerModal}
       >
         <img
           className="play-button__icon"
