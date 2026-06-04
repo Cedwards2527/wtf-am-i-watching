@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { getPosterUrl } from "../../utils/image";
 import play_button_icon from "../../assets/play-button.png";
+import close_button_icon from "../../assets/close-button.png";
 import "./MovieFull.css";
 
 function MovieFull({ movie }) {
@@ -12,7 +13,21 @@ function MovieFull({ movie }) {
       <div
         className={`modal ${activeModal ? "modal__opened" : ""}`}
         onClick={closeTrailerModal}
-      ></div>
+      >
+        <div className="modal__content" onClick={(e) => e.stopPropagation()}>
+          <button
+            className="modal__close"
+            type="button"
+            onClick={closeTrailerModal}
+          >
+            <img
+              className="modal__close-button"
+              src={close_button_icon}
+              alt="Close Button"
+            />
+          </button>
+        </div>
+      </div>
       <button
         className="play-button"
         aria-label="Play trailer"
