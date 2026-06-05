@@ -16,12 +16,12 @@ function MovieFull({ movie }) {
       >
         <div className="modal__content" onClick={(e) => e.stopPropagation()}>
           <button
-            className="modal__close"
+            className="modal__close-button"
             type="button"
             onClick={closeTrailerModal}
           >
             <img
-              className="modal__close-button"
+              className="modal__close-image"
               src={close_button_icon}
               alt="Close Button"
             />
