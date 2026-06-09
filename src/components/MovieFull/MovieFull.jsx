@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { getPosterUrl } from "../../utils/image";
+import { getMovieTrailer } from "../../api/tmdb";
 import play_button_icon from "../../assets/play-button.png";
 import close_button_icon from "../../assets/close-button.png";
 import "./MovieFull.css";
@@ -15,6 +16,14 @@ function MovieFull({ movie }) {
         onClick={closeTrailerModal}
       >
         <div className="modal__content" onClick={(e) => e.stopPropagation()}>
+          <iframe
+            className="iframe__trailer"
+            src={trailerUrl}
+            title="video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullscreen
+          ></iframe>
           <button
             className="modal__close-button"
             type="button"

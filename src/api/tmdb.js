@@ -10,6 +10,12 @@ export const getMovie = (id) => {
   );
 };
 
+export const getMovieTrailer = (id) => {
+  return fetch(`${BASE_URL}/movie/${id}/videos?api_key=${API_KEY}`).then(
+    handleServerResponse
+  );
+};
+
 export const getMoviesFromPicks = (ids) => {
   return Promise.all(
     ids.map((id) =>
