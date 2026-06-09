@@ -7,7 +7,16 @@ import "./MovieFull.css";
 
 function MovieFull({ movie }) {
   const [activeModal, setActiveModal] = useState(false);
-  const openTrailerModal = () => setActiveModal(true);
+  const [trailerUrl, setTrailerUrl] = useState();
+  const openTrailerModal = () => {
+    getMovieTrailer(movie.id).then((data) => {
+      const trailer = data.results.find(
+        (video) => video.site === "YouTube" && video.type === "Trailer"
+      );
+      setTrailerUrl("https://www.youtube.com/embed/" + trailer.key);
+      setActiveModal(true);
+    });
+  };
   const closeTrailerModal = () => setActiveModal(false);
   return (
     <div className="movie-full">
@@ -22,7 +31,7 @@ function MovieFull({ movie }) {
             title="video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
-            allowFullscreen
+            allowFullScreen
           ></iframe>
           <button
             className="modal__close-button"
