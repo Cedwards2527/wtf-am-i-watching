@@ -17,7 +17,11 @@ function MovieFull({ movie }) {
       setActiveModal(true);
     });
   };
-  const closeTrailerModal = () => setActiveModal(false);
+  const closeTrailerModal = () => {
+    setTrailerUrl("");
+    setActiveModal(false);
+  };
+
   return (
     <div className="movie-full">
       <div
