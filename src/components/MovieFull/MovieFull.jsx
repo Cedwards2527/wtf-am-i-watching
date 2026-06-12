@@ -20,7 +20,7 @@ function MovieFull({ movie }) {
     });
   };
   const closeTrailerModal = () => {
-    setTrailerUrl("");
+    setTrailerUrl(null);
     setActiveModal(false);
   };
 

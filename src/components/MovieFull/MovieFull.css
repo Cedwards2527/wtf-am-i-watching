@@ -54,6 +54,10 @@
   transition: 1s;
 }
 
+.iframe__trailer {
+  width: 100%;
+}
+
 .movie-full__overview {
   color: white;
   font-weight: bolder;
