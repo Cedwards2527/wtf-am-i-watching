@@ -13,7 +13,9 @@ function MovieFull({ movie }) {
       const trailer = data.results.find(
         (video) => video.site === "YouTube" && video.type === "Trailer"
       );
-      setTrailerUrl("https://www.youtube.com/embed/" + trailer.key);
+      setTrailerUrl(
+        "https://www.youtube.com/embed/" + trailer.key + "?autoplay=1"
+      );
       setActiveModal(true);
     });
   };
