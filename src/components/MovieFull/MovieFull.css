@@ -56,8 +56,8 @@
 
 .iframe__trailer {
   margin: 0;
-  width: 900px;
-  height: 506px;
+  width: 800px;
+  height: 406px;
   border: none;
 }
 
@@ -109,8 +109,28 @@
 
 .modal__content {
   position: relative;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
+}
+
+@media (max-width: 840px) {
+  .iframe__trailer {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .modal__content {
+    width: 95%;
+  }
+  .modal__close-button {
+    position: absolute;
+    top: -5px;
+    right: -9px;
+    background-color: transparent;
+    border: none;
+  }
 }
