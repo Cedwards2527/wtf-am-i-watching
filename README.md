@@ -40,6 +40,7 @@ A collection of standout movies selected for being unusual, underrated, memorabl
 Movie data, images, and trailer information are provided by The Movie Database (TMDB).
 
 A valid TMDB API key is required to run the application locally.
+git
 
 ## Future Plans
 
