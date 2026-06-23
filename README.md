@@ -1,51 +1,57 @@
-## WTF Am I Watching?
+# WTF Am I Watching?
 
-WTF Am I Watching? is a movie discovery app designed to help you quickly find something to watch that's out of the norm, when you don’t feel like scrolling forever.
+WTF Am I Watching? is a movie discovery app built for those moments when you know you want to watch something, but have no idea what.
 
-The app provides a simple way to generate movie ideas, explore details, and discover something new without overthinking it.
+Instead of endlessly scrolling through streaming services, the app helps surface movies you may have overlooked through random recommendations, featured selections, and curated picks. Each movie includes details, ratings, and trailer playback so you can quickly decide if it's worth adding to your watchlist.
 
 ## Features
 
-**Random Movie Generator**
-Instantly get a random movie suggestion when you’re stuck deciding what to watch.
+### Random Movie Generator
 
-**Movie of the Day**
-A featured movie that changes to give you something new to check out.
+Get a random movie recommendation with a single click.
 
-**Movie Details**
-View key information about each movie, including ratings and overview.
+### Movie of the Day
 
-**Curated Picks (WTF Picks)**
-A collection of personally selected movies that are unique, interesting, or worth watching.
+A featured movie that changes regularly to highlight something worth checking out.
+
+### Movie Details
+
+View movie posters, ratings, overviews, and additional information pulled from TMDB.
+
+### Built-In Trailer Playback
+
+Watch trailers directly in the app through a responsive video modal. When a trailer isn't available, the app gracefully handles the missing data and lets you know.
+
+### WTF Picks
+
+A collection of standout movies selected for being unusual, underrated, memorable, or simply worth recommending.
 
 ## Tech Stack
 
-React
-React Router
-Vite
-JavaScript
-CSS
-TMDB API
+- React
+- React Router
+- Vite
+- JavaScript
+- CSS
+- TMDB API
 
-## Notes
+## API
 
-This project uses the TMDB API for movie data.
-A valid API key is required for the app to function properly.
-Content depends on the data returned by the API.
+Movie data, images, and trailer information are provided by The Movie Database (TMDB).
 
-## Future Improvements
+A valid TMDB API key is required to run the application locally.
 
-Add search functionality
+## Future Plans
 
-Add filtering (genre, rating, etc.)
+- Movie search
+- Genre and rating filters
+- Personal watchlists
+- Favorite movies
+- Additional recommendation categories
+- Expanded trailer and media support
 
-Create a watchlist feature
+## Why I Built It
 
-Improve UI and add animations
+Like a lot of people, I've spent more time trying to decide what to watch than actually watching something. This project started as a way to make movie discovery faster, simpler, and a little more fun.
 
-## Purpose
-
-The goal of this project is to provide a simple and fast way to discover movies without overcomplicating the experience. It focuses on usability, speed, and keeping the decision-making process easy.
-
-Check out this video(https://drive.google.com/file/d/1GnoKtpSKpSPcLFaPz_vnE9Lpg-LZFbJJ/view?usp=drive_link), where I describe my
-project and some challenges I faced while building it.
+The goal was to create an experience that helps users find something interesting without getting lost in endless choices.
