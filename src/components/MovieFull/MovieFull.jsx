@@ -10,11 +10,17 @@ function MovieFull({ movie }) {
   const [trailerUrl, setTrailerUrl] = useState();
   const openTrailerModal = () => {
     getMovieTrailer(movie.id).then((data) => {
+      if (data.results.length === 0) {
+        setTrailerUrl(null);
+        setActiveModal(true);
+        return;
+      }
       const trailer = data.results.find(
         (video) => video.site === "YouTube" && video.type === "Trailer"
       );
+      const finalVideo = trailer || data.results[0];
       setTrailerUrl(
-        "https://www.youtube.com/embed/" + trailer.key + "?autoplay=1"
+        "https://www.youtube.com/embed/" + finalVideo.key + "?autoplay=1"
       );
       setActiveModal(true);
     });
@@ -31,14 +37,18 @@ function MovieFull({ movie }) {
         onClick={closeTrailerModal}
       >
         <div className="modal__content" onClick={(e) => e.stopPropagation()}>
-          <iframe
-            className="iframe__trailer"
-            src={trailerUrl}
-            title="video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+          {trailerUrl ? (
+            <iframe
+              className="iframe__trailer"
+              src={trailerUrl}
+              title="video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          ) : (
+            <p> Oh 💩, No trailer!?</p>
+          )}
           <button
             className="modal__close-button"
             type="button"
